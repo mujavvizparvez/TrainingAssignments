@@ -1,0 +1,41 @@
+@media screen and (min-width: 576px) and (max-width: 799px) {
+  
+  .header-nav {
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+
+  .enterprise {
+    width: 100%;
+    flex-basis: 95%;
+  }
+  .copyright {
+    flex-basis: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 15px;
+  }
+  .footer-child {
+    width: 50%;
+  }
+}

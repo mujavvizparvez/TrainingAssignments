@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/">
+            <h2>Request For Quote</h2>
+        <div class="contactinfo">
+
+            <h3>CONTACT INFORMATION</h3>
+            <hr>
+            <div class="contactinfosubdiv">
+            <input type="text" id="fname" name="firstname" placeholder="First name*"  required  minlength="3" maxlength="10">
+            <input type="text" id="lname" name="lastname" placeholder="Last name*" required minlength="3" maxlength="10" >
+            <input type="email" pattern=".+@qualminds\.com|.+@gmail\.com" id="email" name="email" placeholder="Email*" required >
+            <input type="tel" pattern="[0-9]{10}" id="number" name="number" placeholder="Phone" required maxlength="10">
+        </div>
+        </div>
+        <div class="address">
+            <h3>ADDRESS</h3>
+            <hr>
+            <div class="addresssubdiv">
+            <input type="text" id="street1" name="street1" placeholder="Street line 1*" class="leftitem" required>
+            <input type="text" id="street2" name="street2" placeholder="Street line 2" class="rightitem" required>
+            <input type="text" id="city" name="city" placeholder="city*" class="leftitem" required>
+            <input type="text" id="state" name="state" placeholder="State/Province*" class="rightitem" required>
+            <input type="text"   pattern="[0-9]{5}" id="code" name="code" placeholder="Postal/Zip code*" class="leftitem"   required >
+            <select  class="rightitem" id="countries">
+                
+                <option value="" disabled selected hidden> --Please Select--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select >
+           <div class="country"><label for="country" id="country">Country*</label></div> 
+        </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="product">
+            <h3>PRODUCTS</h3>
+            <hr>
+            <div class="productsubdiv">
+            <input type="text"  pattern="[a-zA-Z0-9]+"  id="item1" name="item1" class="leftitem" placeholder="item #1 name" required>
+            <input type="text" pattern="[0-9]+" class="rightitem" placeholder="item #1 quantity" required>
+            <input type="text"  pattern="[a-zA-Z0-9]+"  id="item2" name="item2" class="leftitem" placeholder="item #2 name" required>
+            <input type="text" pattern="[0-9]+" class="rightitem" placeholder="item #2 quantity" required>
+            <input type="text"  pattern="[a-zA-Z0-9]+"  id="item3" name="item3" class="leftitem" placeholder="item #3 name" required>
+            <input type="text"  pattern="[0-9]+" class="rightitem" placeholder="item #3 quantity" required>
+        </div>
+        </div>
+        <div class="notes">
+            <h3>NOTES</h3>
+            <hr>
+            <div class="notessubdiv">
+                <h4>Additional comment or questions</h4>
+                <textarea name="txtarea" id="txtarea" cols="40" rows="12" required maxlength="200"></textarea>
+            </div>
+        </div>
+        <div>
+        <input type="submit" value="REQUEST QUOTE" class="btn">
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
