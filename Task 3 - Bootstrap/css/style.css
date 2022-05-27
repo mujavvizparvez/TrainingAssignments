@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  font-family: "EB", "Garamond";
+}
+body {
+  font-size: 16px;
+}
+.nav {
+  padding-left: 1px;
+  padding-right: 1px;
+  height: 80px;
+}
+.list {
+  list-style: none;
+  color: #a0a09b;
+  padding: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.date2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  color: #a0a09b;
+  font-size: 10px;
+}
+.culture-div {
+  height: 80px;
+  font-size: 13px;
+}
+.arrow {
+  float: right;
+}
+div.arrow {
+  float: right;
+}
+.zenblog {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+.date {
+  font-size: 0.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  color: #5a5a59a1;
+}
+.text-para {
+  font-size: 13px;
+  color: #a0a09b;
+}
+.footer-para {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #babab5;
+}
+.footer-img-para {
+  color: #b9b9b6;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+.copyright {
+  color: #babab5;
+}
