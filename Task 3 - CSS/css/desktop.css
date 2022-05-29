@@ -1,0 +1,67 @@
+@media screen and (min-width: 801px) {
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    padding: 15px 100px;
+  }
+  .logo {
+    width: 25%;
+    padding-top: 7px;
+  }
+  .navbar {
+    width: 50%;
+    text-align: center;
+  }
+  header .navbar ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  header .navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #333;
+  }
+  .nav-icons {
+    padding-top: 8px;
+    width: 25%;
+  }
+  .humberger {
+    display: none;
+  }
+  .col-1 {
+    width: 34%;
+    padding-right: 15px;
+  }
+  .col-main {
+    width: 22%;
+    padding: 0 15px;
+    border-left: 1.5px solid #e9e9e9;
+  }
+  .trending {
+    border-left: none;
+  }
+  .main-footer {
+    margin-top: 30px;
+  }
+  .about {
+    width: 34%;
+  }
+  .links {
+    display: flex;
+    width: 34%;
+  }
+  .recent {
+    width: 32%;
+  }
+  .copyright {
+    width: 50%;
+  }
+  .footer-icons {
+    width: 50%;
+    text-align: right;
+  }
+}
