@@ -20,7 +20,7 @@
     <header>
       <div class="container">
         <div class="logo-name">
-          <img src="../images/logo.png" alt="" class="logo" />
+          <img src="images/logo.png" alt="" class="logo" />
           <a href="#">The Grilled Prawn</a>
         </div>
         <nav class="navbar">
@@ -43,41 +43,43 @@
       </div>
       <div class="banner-text">
         <p class="recipie"><small>LATEST RECEPIE</small></p>
-        <h2>Baked Polenta with Cheese and Mushroom</h2>
+        <h2 class="banner-text-heading">Baked Polenta with Cheese and Mushroom</h2>
         <p class="banner-para">
           Polenta, goat cheese, Italian sausage, and cemini mushrooms.All
           together this will make for pretty darn good side dish to a lovely
           salad. Go for it.
         </p>
-        <button>Go to recipe &nbsp; <i class="fa-solid fa-arrow-right-long"></i></button>
+        <button class="recipie-btn">Go to recipe <i class="fa-solid fa-arrow-right-long"></i></button>
       </div>
     </div>
 
-    <main>
-      <div class="main-section">
+<main>
+    <div class="main-section">
         <h2 class="filter-heading">Our Recipes</h2>
-        <div class="filter-recipes">
+      <div class="filter-recipes">
           <div class="filter">
             <p>
               <small>Filter recipes by</small> <i class="fa-solid fa-minus"></i>
             </p>
           </div>
+
           <div class="sort">
             <label for="sort"><small> Sort by</small></label>
             <select name="list" id="list">
               <option value="first">Newest first </option>
+              <option value="second">Chinease Chicken Salad</option>
+              <option value="third">French Roast Coffe</option>
+              <option value="fourth">Fish Curry</option>
             </select>
-            
           </div>
           <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i
-            ><small>Search recipe</small>
+               <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="search-icon" placeholder="Search recipie">
           </div>
-        </div>
+      </div>
 
-        <div class="food-type">
-          <div class="type">
-            <p>Food type:</p>
+     <div class="food-type">
+        <div class="type">
+            <p class="food-type-para">Food type:</p>
             <div >
               <input type="checkbox" id="type1" name="type1" />
               <label for="type">Appetisers</label>
@@ -94,12 +96,12 @@
               <input type="checkbox" id="type4" name="type4" />
               <label for="type">Special Occasions</label>
             </div>
-          </div>
+        </div>
           
-<div class="nationality-food">
+    <div class="nationality-food">
           <p for="dishes" class="nationality">Nationality:</p>
           
-          <div class="dishes">
+        <div class="dishes">
             <div>
               <input type="checkbox" id="italian" name="italian" />
               <label for="nationality">Italian (34)</label>
@@ -116,7 +118,7 @@
               <input type="checkbox" id="peruvian" name="peruvian" />
               <label for="nationality">Peruvian(3)</label>
             </div>
-          </div>
+        </div>
 
           <div class="dishes">
             <div>
@@ -155,11 +157,11 @@
               <label for="nationality">Persian(13)</label>
             </div>
             </div>
-          </div>
+      </div>
 
       </div>
 
-      <div class="food-gallery">
+  <div class="food-gallery">
         
         <div class="cards">
           <div class="cards-text">
@@ -295,24 +297,24 @@
             class="cards-img"
           />
         </div>
-      </div>
+  </div>
       <p class="top-return">
         Return to the top <i class="fa-solid fa-angle-up"></i>
       </p>
-   </main>
+</main>
 
     <div class="form-section">
       <div class="form-info">
         <div class="form-text">
-          <h2>Spread the word!</h2>
-          <p>
+          <h2 class="form-text-heading">Spread the word!</h2>
+          <p class="form-text-para">
             Our recipes are awesome,sign up to our newsletter and invite friends to join the Grilled Prawn cult
             
           </p>
         </div>
 
         <form >
-          <div class="form-controls">
+          <div class="form-controls" id="form-controls-border">
             <div>
               <label for="name">Name</label><br>
               <input type="text" id="name" name="name" placeholder="Samantha" />
@@ -343,7 +345,7 @@
               </div>
           </div>
           </div>
-          <hr>
+        
 
           <div class="form-controls">
             <div>
