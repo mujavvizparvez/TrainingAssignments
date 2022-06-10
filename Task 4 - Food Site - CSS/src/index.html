@@ -1,423 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo-name">
-          <img src="images/logo.png" alt="" class="logo" />
-          <a href="#">The Grilled Prawn</a>
-        </div>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#">RECIPIES</a></li>
-            <li><a href="#">DRINKS</a></li>
-            <li><a href="#">DECORATIONS</a></li>
-            <li><a href="#" id="about">ABOUT THE GRILLED PRAWN</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="banner">
-      <div class="banner-img">
-        <img
-          src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-      </div>
-      <div class="banner-text">
-        <p class="recipie"><small>LATEST RECEPIE</small></p>
-        <h2 class="banner-text-heading">Baked Polenta with Cheese and Mushroom</h2>
-        <p class="banner-para">
-          Polenta, goat cheese, Italian sausage, and cemini mushrooms.All
-          together this will make for pretty darn good side dish to a lovely
-          salad. Go for it.
-        </p>
-        <button class="recipie-btn">Go to recipe <i class="fa-solid fa-arrow-right-long"></i></button>
-      </div>
-    </div>
-
-<main>
-    <div class="main-section">
-        <h2 class="filter-heading">Our Recipes</h2>
-      <div class="filter-recipes">
-          <div class="filter">
-            <p>
-              <small>Filter recipes by</small> <i class="fa-solid fa-minus"></i>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <title>Document</title>
+   </head>
+   <body>
+      <header class="header-section">
+         <div class="container">
+            <div class="logo-name">
+               <img src="images/logo.png" alt="" class="logo" />
+               <a href="#" id="logo-link">The Grilled Prawn</a>
+            </div>
+            <nav class="navbar">
+               <ul class="navbar-list">
+                  <li class="navbar-list-items"><a class="navbar-link" href="#">RECIPIES</a></li>
+                  <li class="navbar-list-items"><a class="navbar-link" href="#">DRINKS</a></li>
+                  <li class="navbar-list-items"><a class="navbar-link" href="#">DECORATIONS</a></li>
+                  <li class="navbar-list-items"><a class="navbar-link" href="#" id="about">ABOUT THE GRILLED PRAWN</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div class="banner">
+         <div class="banner-img">
+            <img class="banner-image"
+               src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+               alt=""
+               />
+         </div>
+         <div class="banner-text">
+            <p class="recipie"><small>LATEST RECEPIE</small></p>
+            <h2 class="banner-text-heading">Baked Polenta with Cheese and Mushroom</h2>
+            <p class="banner-para">
+               Polenta, goat cheese, Italian sausage, and cemini mushrooms.All
+               together this will make for pretty darn good side dish to a lovely
+               salad. Go for it.
             </p>
-          </div>
-
-          <div class="sort">
-            <label for="sort"><small> Sort by</small></label>
-            <select name="list" id="list">
-              <option value="first">Newest first </option>
-              <option value="second">Chinease Chicken Salad</option>
-              <option value="third">French Roast Coffe</option>
-              <option value="fourth">Fish Curry</option>
-            </select>
-          </div>
-          <div class="search">
-               <i class="fa-solid fa-magnifying-glass"></i><input type="text" class="search-icon" placeholder="Search recipie">
-          </div>
+            <button class="recipie-btn">Go to recipe <i class="fa-solid fa-arrow-right-long " id="recipie-btn-icon"></i></button>
+         </div>
       </div>
-
-     <div class="food-type">
-        <div class="type">
-            <p class="food-type-para">Food type:</p>
-            <div >
-              <input type="checkbox" id="type1" name="type1" />
-              <label for="type">Appetisers</label>
+      <main class="main-parent-section">
+         <div class="main-section">
+         <h2 class="filter-heading">Our Recipes</h2>
+         <div class="filter-recipes">
+            <div class="filter">
+               <p>
+                  <small class="filter-small">Filter recipes by</small> <i class="fa-solid fa-minus" id="filter-icon"></i>
+               </p>
             </div>
-            <div >
-              <input type="checkbox" id="type2" name="type2" />
-              <label for="type">Mains</label>
+            <div class="sort">
+               <label for="sort"><small> Sort by</small></label>
+               <select name="list" id="list" class="select-items">
+                  <option value="first">Newest first </option>
+                  <option value="second">Chinease Chicken Salad</option>
+                  <option value="third">French Roast Coffe</option>
+                  <option value="fourth">Fish Curry</option>
+               </select>
             </div>
-            <div>
-              <input type="checkbox" id="type3" name="type3" />
-              <label for="type">Desserts</label>
+            <div class="search">
+               <i class="fa-solid fa-magnifying-glass" id="search-icon"></i><input type="text" class="search-input" placeholder="Search recipie">
             </div>
-            <div>
-              <input type="checkbox" id="type4" name="type4" />
-              <label for="type">Special Occasions</label>
+         </div>
+         <div class="food-type">
+            <div class="type">
+               <p class="food-type-para">Food type:</p>
+               <div >
+                  <input type="checkbox" id="Appetisers" name="type1" class="round-checkbox"/>
+                  <label for="Appetisers">Appetisers</label>
+               </div>
+               <div >
+                  <input type="checkbox" id="Mains" name="type2" class="round-checkbox"/>
+                  <label for="Mains">Mains</label>
+               </div>
+               <div>
+                  <input type="checkbox" id="Desserts" name="type3" class="round-checkbox"/>
+                  <label for="Desserts">Desserts</label>
+               </div>
+               <div>
+                  <input type="checkbox" id="Occasions" name="type4" class="round-checkbox"/>
+                  <label for="Occasions">Special Occasions</label>
+               </div>
             </div>
-        </div>
-          
-    <div class="nationality-food">
-          <p for="dishes" class="nationality">Nationality:</p>
-          
-        <div class="dishes">
-            <div>
-              <input type="checkbox" id="italian" name="italian" />
-              <label for="nationality">Italian (34)</label>
+            <div class="nationality-food">
+               <p for="dishes" class="nationality">Nationality:</p>
+               <div class="dishes">
+                  <div>
+                     <input type="checkbox" id="Italian" name="italian" class="round-checkbox"/>
+                     <label for="Italian">Italian (34)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="French" name="french" class="round-checkbox"/>
+                     <label for="French">French (30)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Spanish" name="spanish" class="round-checkbox"/>
+                     <label for="Spanish">Spanish(22)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Peruvian" name="peruvian" class="round-checkbox"/>
+                     <label for="Peruvian">Peruvian(3)</label>
+                  </div>
+               </div>
+               <div class="dishes">
+                  <div>
+                     <input type="checkbox" id="Chinese" name="chinese" class="round-checkbox"/>
+                     <label for="Chinese">Chinese(18)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Indian" name="indian" class="round-checkbox"/>
+                     <label for="Indian">Indian(13)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Thai" name="thai" class="round-checkbox"/>
+                     <label for="Thai">Thai(10)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Norwegian" name="norwegian" class="round-checkbox"/>
+                     <label for="Norwegian">Norwegian(14)</label>
+                  </div>
+               </div>
+               <div class="dishes">
+                  <div>
+                     <input type="checkbox" id="Polish" name="polish" class="round-checkbox"/>
+                     <label for="Polish">Polish(2)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Danish" name="danish" class="round-checkbox"/>
+                     <label for="Danish">Danish(3)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Belgian" name="belgian" class="round-checkbox"/>
+                     <label for="Belgian">Belgian(7)</label>
+                  </div>
+                  <div>
+                     <input type="checkbox" id="Persian" name="persian" class="round-checkbox"/>
+                     <label for="Persian">Persian(13)</label>
+                  </div>
+               </div>
             </div>
-            <div>
-              <input type="checkbox" id="french" name="french" />
-              <label for="nationality">French (30)</label>
+         </div>
+         <div class="food-gallery">
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">5TH MARCH 2016 </span>
+                  <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Thai Yellow Curry Noodles with Shitake Mushrooms</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="spanish" name="spanish" />
-              <label for="nationality">Spanish(22)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">17TH MARCH 2016 </span> <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Cappellini with cherry Tomatoes and Fresh Basil</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="peruvian" name="peruvian" />
-              <label for="nationality">Peruvian(3)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">4TH April 2016 </span> <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Baked Turkey Sausage and Mascarpone Stuffed Shells</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-        </div>
-
-          <div class="dishes">
-            <div>
-              <input type="checkbox" id="chinese" name="chinese" />
-              <label for="nationality">Chinese(18)</label>
+            <div class="cards">
+               <div class="cards-text" id="apple">
+                  <span class="date">24TH MAY 2016 </span> <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Caramelised Apple and Herb Fiocchi</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="indian" name="indian" />
-              <label for="nationality">Indian(13)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">24TH MAY 2016 </span> <span class="country">SPANISH <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Pumpkin Beer Cheese Soup</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="thai" name="thai" />
-              <label for="nationality">Thai(10)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">22TH SEPTEMBER 2016 </span> <span class="country">THAI <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Yum Woon Sen with Shrimp (Glass noodle salad with Shrimp)</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="norwegian" name="norwegian" />
-              <label for="nationality">Norwegian(14)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">14TH OCTOBER 2016 </span> <span class="country">THAI <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Beef Satay</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/3655916/pexels-photo-3655916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-          </div>
-
-          <div class="dishes">
-            <div>
-              <input type="checkbox" id="polish" name="polish" />
-              <label for="nationality">Polish(2)</label>
+            <div class="cards">
+               <div class="cards-text" id="onion">
+                  <span class="date">24TH OCTOBER 2016 </span> <span class="country">FRENCH <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Creamy French Onion Soup Dip in a Bread Bowl</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="danish" name="danish" />
-              <label for="nationality">Danish(3)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">12TH NOVEMBER 2016 </span>
+                  <span class="country">SPANISH <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Paella</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="belgian" name="belgian" />
-              <label for="nationality">Belgian(7)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">24TH DECEMBER 2016 </span> <span class="country">THAI <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Spicy Black Bean Burger</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
-            <div>
-              <input type="checkbox" id="persian" name="persian" />
-              <label for="nationality">Persian(13)</label>
+            <div class="cards">
+               <div class="cards-text">
+                  <span class="date">9TH JANUARY 2017 </span> <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Fresh Fig and Pistachio Salad</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
+            <div class="cards">
+               <div class="cards-text" id="noodles">
+                  <span class="date">5TH MARCH 2016 </span> <span class="country">ITALIAN <i class="fa-solid fa-heart red-heart"></i></span>
+                  <p class="cards-text-para">Thai Yellow Curry Noodles with Shitake Mushrooms</p>
+               </div>
+               <img
+                  src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt=""
+                  class="cards-img"
+                  />
             </div>
+         </div>
+         <p class="top-return">
+            Return to the top <i class="fa-solid fa-angle-up"></i>
+         </p>
+      </main>
+      <div class="form-section">
+         <div class="form-info">
+            <div class="form-text">
+               <h2 class="form-text-heading">Spread the word!</h2>
+               <p class="form-text-para">
+                  Our recipes are awesome,sign up to our newsletter and invite friends to join the Grilled Prawn cult
+               </p>
+            </div>
+            <form >
+               <div class="form-controls" id="form-controls-border">
+                  <div class="info-div">
+                     <label for="name" class="form-control-label">Name</label><br>
+                     <input type="text" id="name" name="name" placeholder="Samantha" class="form-control-input"/>
+                  </div>
+                  <div class="info-div">
+                     <label for="surname" class="form-control-label">Surname</label>
+                     <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Smith"
+                        class="form-control-input"
+                        />
+                  </div>
+                  <div class="info-div">
+                     <label for="email" class="form-control-label">Email address</label>
+                     <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Samantha@smith.com"
+                        class="form-control-input"
+                        />
+                  </div>
+                  <div class="bin">
+                     <div class="button-div">
+                        <button class="remove-btn">
+                        <i class="fa-solid fa-trash"></i><span id="remove-text">Remove</span></button>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-controls">
+                  <div class="info-div">
+                     <label for="name" class="form-control-label">Name</label><br>
+                     <input type="text" id="name" name="name" placeholder="George" class="form-control-input"/>
+                  </div>
+                  <div class="info-div">
+                     <label for="surname" class="form-control-label">Surname</label>
+                     <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Stone"
+                        class="form-control-input"
+                        />
+                  </div>
+                  <div class="info-div">
+                     <label for="email" class="form-control-label">Email address</label>
+                     <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="george.stone@gmail.com"
+                        class="form-control-input"
+                        />
+                  </div>
+                  <div class="add-info">
+                     <div class="add-info-div">
+                        <button class="add-info-btn" >Add Friend</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="send">
+                  <button class="send-btn">Send &nbsp; <i class="fa-solid fa-arrow-right send-icon"></i></button>
+               </div>
+            </form>
+         </div>
       </div>
-
-      </div>
-
-  <div class="food-gallery">
-        
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">5TH MARCH 2016 </span>
-             <span class="country">ITALIAN</span>
-            <p>Thai Yellow Curry Noodles with Shitake Mushrooms</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">17TH MARCH 2016 </span> <span class="country">ITALIAN</span>
-            <p>Cappellini with cherry Tomatoes and Fresh Basil</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">4TH April 2016 </span> <span class="country">ITALIAN</span>
-            <p>Baked Turkey Sausage and Mascarpone Stuffed Shells</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text" id="apple">
-            <span class="date">24TH MAY 2016 </span> <span class="country">ITALIAN</span>
-            <p>Caramelised Apple and Herb Fiocchi</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">24TH MAY 2016 </span> <span class="country">SPANISH</span>
-            <p>Pumpkin Beer Cheese Soup</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">22TH SEPTEMBER 2016 </span> <span class="country">THAI</span>
-            <p>Yum Woon Sen with Shrimp (Glass noodle salad with Shrimp)</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">14TH OCTOBER 2016 </span> <span class="country">THAI</span>
-            <p>Beef Satay</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/3655916/pexels-photo-3655916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text" id="onion">
-            <span class="date">24TH OCTOBER 2016 </span> <span class="country">FRENCH</span>
-            <p>Creamy French Onion Soup Dip in a Bread Bowl</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">12TH NOVEMBER 2016 </span>
-            <span class="country">SPANISH</span>
-            <p>Paella</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">24TH DECEMBER 2016 </span> <span class="country">THAI</span>
-            <p>Spicy Black Bean Burger</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text">
-            <span class="date">9TH JANUARY 2017 </span> <span class="country">ITALIAN</span>
-            <p>Fresh Fig and Pistachio Salad</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/718742/pexels-photo-718742.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-        <div class="cards">
-          <div class="cards-text" id="noodles">
-            <span class="date">5TH MARCH 2016 </span> <span class="country">ITALIAN</span>
-            <p>Thai Yellow Curry Noodles with Shitake Mushrooms</p>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-            class="cards-img"
-          />
-        </div>
-  </div>
-      <p class="top-return">
-        Return to the top <i class="fa-solid fa-angle-up"></i>
-      </p>
-</main>
-
-    <div class="form-section">
-      <div class="form-info">
-        <div class="form-text">
-          <h2 class="form-text-heading">Spread the word!</h2>
-          <p class="form-text-para">
-            Our recipes are awesome,sign up to our newsletter and invite friends to join the Grilled Prawn cult
-            
-          </p>
-        </div>
-
-        <form >
-          <div class="form-controls" id="form-controls-border">
-            <div>
-              <label for="name">Name</label><br>
-              <input type="text" id="name" name="name" placeholder="Samantha" />
-            </div>
-
-            <div>
-              <label for="surname">Surname</label>
-              <input
-                type="text"
-                id="surname"
-                name="surname"
-                placeholder="Smith"
-              />
-            </div>
-
-            <div>
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Samantha@smith.com"
-              />
-            </div>
-            <div class="bin">
-              <div>
-              <i class="fa-solid fa-trash"></i><span>Remove</span>
-              </div>
-          </div>
-          </div>
-        
-
-          <div class="form-controls">
-            <div>
-              <label for="name">Name</label><br>
-              <input type="text" id="name" name="name" placeholder="George" />
-            </div>
-
-            <div>
-              <label for="surname">Surname</label>
-              <input
-                type="text"
-                id="surname"
-                name="surname"
-                placeholder="Stone"
-              />
-            </div>
-            <div>
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="george.stone@gmail.com"
-              />
-            </div>
-          <div class="add-info">
-            <div>
-            <button >Add Friend</button>
-            </div>
-          </div>
-      </div>
-       <div class="send">
-            <button >Send &nbsp; <i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-       </form>
-      </div>
-    </div>
-
-    <footer>
-      <div class="additional-info">
-        <h3>
-          Our Recipes
-        </h3>
-        <p>All our recipes are tested throughly by us to make sure they're suitable for your kitchen at home.We know many of you are concerned about healthy eating so we send them to a qualified nutritionist for through analysis too.</p>
-      </div>
-
-      <div class="additional-info">
-      <h3>Grilled Praw's History</h3>
-      <p>The Grilled prawn is a fictional food blog created in January 2015.</p>
-      </div>
-
-      <div class="additional-info">
-        <h3>Tips and Tricks</h3>
-        <p>Not sure how to do somethong?Don't panic we have plenty of tutorials for you.</p>
-        <p class="contact-link"><span>Learn more</span></p>
-      </div>
-
-      <div class="additional-info">
-        <h3>Help and Contact</h3>
-        <p>Struggling with one of the recipes?</p>
-        <p class="contact-link"><span>Send us an email</span></p>
-        <p>We are always happy to try new things,send us your suggestions!</p>
-        <p class="contact-link"><span>Fill in the form</span></p>
-      </div>
-
-      <div class="copyright">
-         <p class="sign"><span>&copy;</span> The Grilled Prawn </p>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit qui omnis perferendis dicta similique, perspiciatis beatae aspernatur mollitia! Accusantium odit modi culpa hic laudantium. Lorem ipsum dolor sit amet.</p>
-
-         <p class="copyright-para">The images and recipes ideas were taken from spoonforkbacon.com and the icons from Google Material.</p>
-      </div>
-    </footer>
-     
-  </body>
+      <footer class="footer-section">
+         <div class="additional-info">
+            <h3 class="additional-info-heading">
+               Our Recipes
+            </h3>
+            <p class="additional-info-para">All our recipes are tested throughly by us to make sure they're suitable for your kitchen at home.We know many of you are concerned about healthy eating so we send them to a qualified nutritionist for through analysis too.</p>
+         </div>
+         <div class="additional-info">
+            <h3 class="additional-info-heading">Grilled Praw's History</h3>
+            <p class="additional-info-para">The Grilled prawn is a fictional food blog created in January 2015.</p>
+         </div>
+         <div class="additional-info">
+            <h3 class="additional-info-heading">Tips and Tricks</h3>
+            <p class="additional-info-para">Not sure how to do somethong?Don't panic we have plenty of tutorials for you.</p>
+            <p class="contact-link"><span>Learn more</span></p>
+         </div>
+         <div class="additional-info">
+            <h3 class="additional-info-heading">Help and Contact</h3>
+            <p class="additional-info-para">Struggling with one of the recipes?</p>
+            <p class="contact-link"><span>Send us an email</span></p>
+            <p class="additional-info-para">We are always happy to try new things,send us your suggestions!</p>
+            <p class="contact-link"><span>Fill in the form</span></p>
+         </div>
+         <div class="copyright">
+            <p class="sign"><span>&copy;</span> The Grilled Prawn </p>
+            <p class="additional-info-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit qui omnis perferendis dicta similique, perspiciatis beatae aspernatur mollitia! Accusantium odit modi culpa hic laudantium. Lorem ipsum dolor sit amet.</p>
+            <p class="copyright-para">The images and recipes ideas were taken from spoonforkbacon.com and the icons from Google Material.</p>
+         </div>
+      </footer>
+   </body>
 </html>
