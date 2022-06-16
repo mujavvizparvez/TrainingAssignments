@@ -4,7 +4,10 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/desktop.css" />
+      <link rel="stylesheet" href="css/tablet.css">
+      <link rel="stylesheet" href="css/mobile.css">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -19,7 +22,7 @@
    <body>
       <header class="header-section">
          <div class="container">
-            <div class="logo-name">
+            <div class="logo-section">
                <img src="images/logo.png" alt="" class="logo" />
                <a href="#" id="logo-link">The Grilled Prawn</a>
             </div>
@@ -47,109 +50,118 @@
                Polenta, goat cheese, Italian sausage, and cemini mushrooms.All
                together this will make for pretty darn good side dish to a lovely
                salad. Go for it.
+               <div class="recipie-btn-div" >
             </p>
             <button class="recipie-btn">Go to recipe <i class="fa-solid fa-arrow-right-long " id="recipie-btn-icon"></i></button>
+            </div>
          </div>
       </div>
       <main class="main-parent-section">
          <div class="main-section">
-         <h2 class="filter-heading">Our Recipes</h2>
-         <div class="filter-recipes">
-            <div class="filter">
-               <p>
+           <h2 class="filter-heading">Our Recipes</h2>
+          <div class="filter-recipes"> <!-- //parent section -->
+          
+            <div class="type">
+               
+                <p class="filter-recipie-para">
                   <small class="filter-small">Filter recipes by</small> <i class="fa-solid fa-minus" id="filter-icon"></i>
                </p>
+               <div class="border-div">
+               <p class="food-type-para">Food type:</p>
+               <div class="checbox-item checbox-tab">
+                  <input type="checkbox" id="Appetisers" name="type1" class="round-checkbox"/>
+                  <label for="Appetisers" class="round-label">Appetisers</label>
+               </div>
+               <div class="checbox-item checbox-tab">
+                  <input type="checkbox" id="Mains" name="type2" class="round-checkbox"/>
+                  <label for="Mains" class="round-label">Mains</label>
+               </div>
+               <div class="checbox-item checbox-tab">
+                  <input type="checkbox" id="Desserts" name="type3" class="round-checkbox"/>
+                  <label for="Desserts" class="round-label">Desserts</label>
+               </div>
+               <div class="checbox-item checbox-tab">
+                  <input type="checkbox" id="Occasions" name="type4" class="round-checkbox"/>
+                  <label for="Occasions" class="round-label">Special Occasions</label>
+               </div>
+               </div>
             </div>
-            <div class="sort">
-               <label for="sort"><small> Sort by</small></label>
+  
+            <div class="nationality-food">
+               <div class="sort-search">
+                <div class="sort">
+               <label for="sort" class="sort-label"><small > Sort by</small></label>
                <select name="list" id="list" class="select-items">
                   <option value="first">Newest first </option>
                   <option value="second">Chinease Chicken Salad</option>
                   <option value="third">French Roast Coffe</option>
                   <option value="fourth">Fish Curry</option>
                </select>
-            </div>
-            <div class="search">
+             </div>
+             <div class="search">
                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i><input type="text" class="search-input" placeholder="Search recipie">
             </div>
          </div>
-         <div class="food-type">
-            <div class="type">
-               <p class="food-type-para">Food type:</p>
-               <div >
-                  <input type="checkbox" id="Appetisers" name="type1" class="round-checkbox"/>
-                  <label for="Appetisers">Appetisers</label>
-               </div>
-               <div >
-                  <input type="checkbox" id="Mains" name="type2" class="round-checkbox"/>
-                  <label for="Mains">Mains</label>
-               </div>
-               <div>
-                  <input type="checkbox" id="Desserts" name="type3" class="round-checkbox"/>
-                  <label for="Desserts">Desserts</label>
-               </div>
-               <div>
-                  <input type="checkbox" id="Occasions" name="type4" class="round-checkbox"/>
-                  <label for="Occasions">Special Occasions</label>
-               </div>
-            </div>
-            <div class="nationality-food">
                <p for="dishes" class="nationality">Nationality:</p>
+               <div class="dishes-parent-div">
                <div class="dishes">
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Italian" name="italian" class="round-checkbox"/>
-                     <label for="Italian">Italian (34)</label>
+                     <label for="Italian" class="round-label">Italian (34)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="French" name="french" class="round-checkbox"/>
-                     <label for="French">French (30)</label>
+                     <label for="French" class="round-label">French (30)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Spanish" name="spanish" class="round-checkbox"/>
-                     <label for="Spanish">Spanish(22)</label>
+                     <label for="Spanish" class="round-label">Spanish(22)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Peruvian" name="peruvian" class="round-checkbox"/>
-                     <label for="Peruvian">Peruvian(3)</label>
+                     <label for="Peruvian" class="round-label">Peruvian(3)</label>
                   </div>
                </div>
                <div class="dishes">
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Chinese" name="chinese" class="round-checkbox"/>
-                     <label for="Chinese">Chinese(18)</label>
+                     <label for="Chinese" class="round-label">Chinese(18)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Indian" name="indian" class="round-checkbox"/>
-                     <label for="Indian">Indian(13)</label>
+                     <label for="Indian" class="round-label">Indian(13)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Thai" name="thai" class="round-checkbox"/>
-                     <label for="Thai">Thai(10)</label>
+                     <label for="Thai" class="round-label">Thai(10)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Norwegian" name="norwegian" class="round-checkbox"/>
-                     <label for="Norwegian">Norwegian(14)</label>
+                     <label for="Norwegian" class="round-label">Norwegian(14)</label>
                   </div>
                </div>
                <div class="dishes">
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Polish" name="polish" class="round-checkbox"/>
-                     <label for="Polish">Polish(2)</label>
+                     <label for="Polish" class="round-label">Polish(2)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Danish" name="danish" class="round-checkbox"/>
-                     <label for="Danish">Danish(3)</label>
+                     <label for="Danish" class="round-label">Danish(3)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Belgian" name="belgian" class="round-checkbox"/>
-                     <label for="Belgian">Belgian(7)</label>
+                     <label for="Belgian" class="round-label">Belgian(7)</label>
                   </div>
-                  <div>
+                  <div class="checbox-item">
                      <input type="checkbox" id="Persian" name="persian" class="round-checkbox"/>
-                     <label for="Persian">Persian(13)</label>
+                     <label for="Persian" class="round-label">Persian(13)</label>
+                  </div>
+                  <div class="clearflot"></div>
                   </div>
                </div>
             </div>
+         </div>
          </div>
          <div class="food-gallery">
             <div class="cards">
@@ -286,10 +298,11 @@
                   class="cards-img"
                   />
             </div>
-         </div>
-         <p class="top-return">
+             <p class="top-return">
             Return to the top <i class="fa-solid fa-angle-up"></i>
          </p>
+         </div>
+        
       </main>
       <div class="form-section">
          <div class="form-info">
@@ -328,7 +341,7 @@
                   <div class="bin">
                      <div class="button-div">
                         <button class="remove-btn">
-                        <i class="fa-solid fa-trash"></i><span id="remove-text">Remove</span></button>
+                        <i class="fa-solid fa-trash delete-bin"></i><span id="remove-text">Remove</span></button>
                      </div>
                   </div>
                </div>

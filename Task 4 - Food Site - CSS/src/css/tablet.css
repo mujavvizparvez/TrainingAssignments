@@ -1,0 +1,268 @@
+@media screen and (min-width: 581px) and (max-width: 900px) {
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+  #logo-link {
+    padding: 2em;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #ea474c;
+  }
+  .navbar-list {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .navbar-list-items {
+    list-style: none;
+  }
+  .navbar-link {
+    font-size: 12px;
+  }
+  .banner {
+    display: flex;
+    padding-top: 10px;
+  }
+  .banner-img {
+    width: 68%;
+  }
+  .banner-image {
+    width: 100%;
+    height: 430px;
+    vertical-align: bottom;
+  }
+  .banner-text {
+    width: 32%;
+    background-color: #ff373f;
+    color: white;
+    padding: 18px;
+  }
+  .banner-text-heading {
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .banner-para {
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 15px;
+    color: #feffff;
+  }
+  .recipie {
+    padding-top: 15px;
+
+    padding-bottom: 10px;
+    color: #feffff;
+  }
+  .recipie small {
+    font-size: 12px;
+  }
+  .recipie-btn {
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 25px;
+    background-color: #ffffff;
+    color: #434242;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+  }
+  .recipie-btn:hover {
+    background-color: #f7f7f6;
+    cursor: pointer;
+  }
+  #recipie-btn-icon {
+    padding-left: 3px;
+  }
+  /* FILTER SECTION  */
+  .main-parent-section {
+    background-color: #f6f6f6;
+  }
+  .main-section {
+    width: 90%;
+    margin: auto;
+  }
+  .filter-heading {
+    padding: 30px 0;
+    font-size: 25px;
+    font-weight: 300;
+    color: #434242;
+  }
+  .filter-recipes {
+    background-color: #ff373f;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 3px;
+    padding-bottom: 1em;
+  }
+  .type {
+    color: #ffffff;
+    width: 100%;
+    padding-left: 1.2em;
+    border-top-left-radius: 10px;
+    line-height: 25px;
+  }
+  .border-div > div {
+    padding: 0.1em;
+  }
+  .filter-recipie-para {
+    padding: 0.7em 0;
+  }
+  .checbox-tab {
+    float: left;
+    width: 50%;
+  }
+  .filter-small {
+    font-size: 15px;
+  }
+
+  #filter-icon {
+    float: right;
+    padding-right: 0.5em;
+  }
+
+  .nationality-food {
+    width: 100%;
+  }
+  .sort-search {
+    display: flex;
+    width: 100%;
+    padding: 1em 0;
+  }
+  .sort {
+    width: 50%;
+    background-color: #f6f6f6;
+    color: #484848;
+  }
+  .sort select {
+    margin: 1em 0;
+  }
+  .sort-label {
+    margin-top: 0.6em;
+  }
+  .select-items {
+    padding: 0.6em;
+    font-size: 13px;
+    width: 45%;
+  }
+
+  .search-input {
+    border: none;
+    width: 35%;
+    padding: 7px 0;
+    margin-bottom: 2px;
+  }
+  .dishes-parent-div {
+    display: flex;
+  }
+  .dishes {
+    width: 100%;
+    color: #ffffff;
+    padding-left: 20px;
+    line-height: 25px;
+  }
+  /* CARD SECTION */
+  .food-gallery {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards {
+    width: 48%;
+    height: 380px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .cards-text .date,
+  .country {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .cards-text-para {
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .cards-img {
+    width: 100%;
+    height: 250px;
+  }
+  /* FORM SECTION  */
+
+  .form-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-text-para {
+    font-size: 17px;
+  }
+  .form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .info-div {
+    flex-basis: 50%;
+    margin-top: 0.5em;
+  }
+  .form-control-label {
+    font-size: 12px;
+    margin-top: 0.2em;
+  }
+  .form-control-input {
+    border: 0.5px solid white;
+    width: 95%;
+  }
+
+  .bin {
+    display: table;
+    text-align: center;
+    width: 48%;
+  }
+  .button-div {
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 12px;
+  }
+  .remove-btn {
+    text-align: center;
+  }
+
+  .add-info {
+    width: 50%;
+    display: table;
+    text-align: center;
+  }
+  .add-info-div {
+    width: 100%;
+    float: left;
+    display: table-cell;
+    vertical-align: bottom;
+    margin: 1.7em 0;
+  }
+
+  .send-btn {
+    width: 30%;
+  }
+  /* FOOTER SECTION */
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .additional-info {
+    flex-basis: 50%;
+    padding-right: 10px;
+  }
+  .sign {
+    padding: 20px 0;
+    font-size: 15px;
+    color: #4a4a4a;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
