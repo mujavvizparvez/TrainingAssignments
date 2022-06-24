@@ -12,11 +12,11 @@
     color: #ea474c;
   }
   .navbar-list {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .navbar-list-items {
     list-style: none;
@@ -242,12 +242,18 @@
     float: left;
     display: table-cell;
     vertical-align: bottom;
-    margin: 1.7em 0;
+    margin: 2em 0;
   }
 
-  .send-btn {
-    width: 30%;
-  }
+ .col {
+  padding: 0.4em;
+  width: 10%;
+  text-align: center;
+}
+button {
+  padding: 0.5em;
+  margin-left: 1em;
+}
   /* FOOTER SECTION */
   .footer-section {
     display: flex;
@@ -266,3 +272,5 @@
     text-align: center;
   }
 }
+
+  

@@ -4,7 +4,7 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.1px;
 }
 .logo-section {
   display: flex;
@@ -23,6 +23,20 @@
 .navbar-link {
   text-decoration: none;
   color: #676767;
+}
+.navbar-link:hover {
+  color: red;
+}
+.open-menu {
+  font-size: 12px;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+.close-menu {
+  font-size: 12px;
+  cursor: pointer;
+  display: none;
 }
 .recipie small {
   font-size: 14px;
@@ -98,7 +112,7 @@
   flex-basis: 100%;
   margin-top: 0.5em;
   padding-top: 0.5em;
-   padding-left: 1.2em;
+  padding-left: 1.2em;
   padding-bottom: 0.5em;
 }
 .dishes > div {
@@ -202,25 +216,16 @@
 #form-controls-border {
   border-bottom: 1.5px solid white;
 }
-.remove-btn {
-  background-color: #ff373f;
-  color: white;
-  font-size: 15px;
-  border: none;
-  padding: 0.7em 0.7em;
+/* Form table section */
+#table {
+  margin-top: 2em;
 }
-.remove-btn:hover {
-  background-color: rgb(209, 49, 49);
-  cursor: pointer;
-}
-.delete-bin {
-  padding: 0 0.5em;
-}
+
 .add-info-btn {
   width: 50%;
   text-align: center;
   padding: 0.6em;
-  margin: auto;
+  /* margin-bottom: 1em; */
   background-color: #ff373f;
   border: 1px solid white;
   border-radius: 3px;
@@ -230,26 +235,7 @@
   background-color: rgb(209, 49, 49);
   cursor: pointer;
 }
-.send {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
 
-.send-btn {
-  border: 1px solid white;
-  border-radius: 3px;
-  background-color: white;
-  color: #6c6c6c;
-  padding: 0.6em;
-}
-.send-btn:hover {
-  background-color: #f7f7f6;
-  cursor: pointer;
-}
-.send-icon {
-  font-size: 10px;
-}
 /* FOOTER SECTION */
 .footer-section {
   width: 90%;
