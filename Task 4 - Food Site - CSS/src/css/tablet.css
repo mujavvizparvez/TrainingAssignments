@@ -151,7 +151,7 @@
 
   .search-input {
     border: none;
-    width: 35%;
+    width: 30%;
     padding: 7px 0;
     margin-bottom: 2px;
   }
@@ -217,19 +217,11 @@
     border: 0.5px solid white;
     width: 95%;
   }
-
-  .bin {
-    display: table;
-    text-align: center;
-    width: 48%;
-  }
+ 
   .button-div {
     display: table-cell;
     vertical-align: bottom;
     font-size: 12px;
-  }
-  .remove-btn {
-    text-align: center;
   }
 
   .add-info {
@@ -244,16 +236,7 @@
     vertical-align: bottom;
     margin: 2em 0;
   }
-
- .col {
-  padding: 0.4em;
-  width: 10%;
-  text-align: center;
-}
-button {
-  padding: 0.5em;
-  margin-left: 1em;
-}
+ 
   /* FOOTER SECTION */
   .footer-section {
     display: flex;
@@ -272,5 +255,3 @@ button {
     text-align: center;
   }
 }
-
-  

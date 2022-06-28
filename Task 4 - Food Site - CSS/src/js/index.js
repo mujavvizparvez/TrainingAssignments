@@ -1,4 +1,4 @@
-//Humberger
+//Humberger Menu
 const navList = document.querySelector(".navbar-list");
 const closeMenu = document.querySelector(".close-menu");
 const openMenu = document.querySelector(".open-menu");
@@ -41,7 +41,7 @@ function save() {
     document.getElementById("btnSave").value = "Add Friend";
   }
   reset();
-  onLoad();
+
   // console.log(readData);
 }
 //CREATE
@@ -66,6 +66,9 @@ function setDataToLocalStorage(customerDetails) {
 // INSERT
 function addGridData(data) {
   var table = document.getElementById("table");
+  if (table.rows.length > 0) {
+    table.style.display = "table";
+  }
   var row = table.insertRow();
   var cell1 = row.insertCell(0);
   cell1.innerHTML = data.name;
@@ -76,8 +79,6 @@ function addGridData(data) {
     3
   ).innerHTML = `<button onclick="edit(this)"><i class="fa-solid fa-pen-to-square action-btn" id="remove"></i></button>
                 <button onclick="remove(this)"><i class="fa-solid fa-trash-can action-btn"></i></button>`;
-  let actionBtnContainer = document.querySelector(".action-btn").parentElement;
-  actionBtnContainer.classList.add("action-btn-center");
 }
 // EDIT
 function edit(tableData) {
@@ -180,10 +181,27 @@ function validate() {
 }
 
 function onLoad() {
-  // var tableRow = document.querySelector(".grid");
-  var table = document.getElementById("table");
-  table.style.display = "none";
-  if (table.rows.length > 1) {
-    table.style.display = "block";
+  var data = localStorage.getItem("CustomerDetails");
+  var customerList = JSON.parse(data);
+  if (customerList != null || customerList != undefined) {
+    var table = document.getElementById("table");
+    customerList.forEach(loop);
+
+    function loop(item) {
+      var row = table.insertRow();
+      var cell1 = row.insertCell(0);
+      cell1.innerHTML = item.name;
+      var cell2 = row.insertCell(1);
+      cell2.innerHTML = item.surName;
+      var cell3 = row.insertCell(2);
+      cell3.innerHTML = item.email;
+      row.insertCell(
+        3
+      ).innerHTML = `<button onclick="edit(this)" class="action-btn"><i class="fa-solid fa-pen-to-square action-icon" id="remove"></i></button>
+                <button onclick="remove(this)" class="action-btn"><i class="fa-solid fa-trash-can action-icon"></i></button>`;
+    }
+  } else {
+    var table = document.getElementById("table");
+    table.style.display = "none";
   }
 }

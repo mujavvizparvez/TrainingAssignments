@@ -83,6 +83,7 @@
   background-color: white;
   border: 2px solid #1d242d;
   border-radius: 3px;
+  text-align: center;
 }
 .search {
   text-align: right;
@@ -93,7 +94,7 @@
 #search-icon {
   text-align: right;
   padding: 5px 0;
-  font-size: 17px;
+  font-size: 1em;
   margin-left: 5px;
 }
 .search-input {
@@ -101,7 +102,7 @@
 }
 .search-input::placeholder {
   text-align: right;
-  font-size: 14px;
+  font-size: .8em;
 }
 .search-input:focus {
   padding-left: 2px;
@@ -116,7 +117,7 @@
   padding-bottom: 0.5em;
 }
 .dishes > div {
-  padding: 0.1em;
+  padding: 0.3em;
 }
 
 /* -------CODE FOR ROUND CHECKBOX----------- */
@@ -216,11 +217,6 @@
 #form-controls-border {
   border-bottom: 1.5px solid white;
 }
-/* Form table section */
-#table {
-  margin-top: 2em;
-}
-
 .add-info-btn {
   width: 50%;
   text-align: center;
@@ -234,6 +230,27 @@
 .add-info-btn:hover {
   background-color: rgb(209, 49, 49);
   cursor: pointer;
+}
+
+/* Form table section */
+#table {
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  border-color: white;
+}
+.col {
+  width: 25%;
+  padding: 0.8em;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: #ff373f;
+  text-align: center;
+  padding: 0.5em;
 }
 
 /* FOOTER SECTION */
