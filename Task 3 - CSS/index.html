@@ -14,14 +14,14 @@
    </head>
    <body>
       <header>
-         <div class="container">
-            <div class="logo">
+         <div class="container" id="container">
+            <div class="logo" id="logo"  ;>
                <a href="#" >ZenBlog</a>
             </div>
-          <nav class="navbar">
+          <nav class="navbar" id="nav">
              <ul>
                <li >
-                  <a href="#">Blog</a>
+                  <a href="#" id="blog" >Blog</a>
                </li>
                <li>
                   <a href="#">Single Post</a>
@@ -97,8 +97,8 @@
                </div>
             <div class="col-main trending">
                <table>
-                  <tr>
-                     <th>Trending</th>
+                  <tr >
+                     <th id="trend">Trending</th>
                   </tr>
                   <tr>                      
                      <td>                          
@@ -171,7 +171,7 @@
                <li>> Contact</li>
              </ul>
             </div>
-            <div class="categories">
+            <div class="categories" id="categories">
                <h4 >Categories</h4>
              <ul>
                <li>> Business</li>
@@ -243,6 +243,75 @@
             <i class="fa-solid fa-arrow-up"></i>
          </div>
       </footer>
+      <script>
+         var element;
+         // element = document.links[1];
+         // console.log(element);
+
+      //   var element= document.getElementById("nav");
+      //   console.log(element);
+      //   var element= document.getElementsByClassName("post")[3];
+         // var element= document.getElementById("nav").innerText;
+
+      //   var element= document.getElementById("trend").innerHTML="sss";
+      //  console.log(element);
+      //  var  element= document.getElementById("categories").attributes.value="xyz";
+      //    console.log(element);
+
+         //  var  element= document.getElementById("nav").setAttribute("style","color:pink");
+         //    console.log(element);
+            
+            // QUERY SELECTORS
+
+         // document.querySelector(".logo").innerHTML="<a>wow</a>";
+         // console.log(element);
+
+      //     document.querySelector("#logo").getAttribute("class");
+      //    console.log(element);
+
+      //   element=   document.querySelectorAll(".post")[2].innerHTML;
+      //    console.log(element);
+
+      //      element=   document.querySelectorAll("ul")[1].innerHTML;
+      //    console.log(element);
+
+      //     element=   document.querySelectorAll("#nav li")[2];
+
+               // STYLING METHODS
+
+         //     element=   document.querySelector("#blog").style.color;
+         // console.log(element);
+
+        
+         //     element=document.querySelector("#blog").style.color="purple";
+         //     console.log(element);
+
+         //       document.querySelector(".container").style.backgroundColor="pink";
+         //       document.querySelector(".container").style.color="blue";
+
+               //  element=  document.querySelector(".container").className="abcd";
+               //    element=  document.querySelector(".container").className;
+               //   console.log(element);
+
+              //  ADDEVENTLISTENER
+
+         //  document.getElementById("trend").onclick = mnp;
+         //  function mnp(){
+         //    document.getElementById("trend").style.color="red";
+         //       console.log(element);
+         //  }
+               // OR
+                document.getElementById("container").addEventListener("mouseenter",mnp);
+                      document.getElementById("container").addEventListener("click",function(){
+                        //   document.getElementById("container").style.border="3px solid blue";
+                            // OR
+                        this.style.border="3px solid blue";
+                       });
+                        function mnp(){
+  document.getElementById("container").style.background="red";
+            console.log(element);
+           }
+      </script>
    </body>
 </html>
 
