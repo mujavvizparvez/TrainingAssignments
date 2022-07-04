@@ -105,7 +105,7 @@ function remove(cell) {
   customerList.splice(index - 1, 1);
   localStorage.setItem("CustomerDetails", JSON.stringify(customerList));
 }
-/// DELETE
+/// RESET
 function reset() {
   document.getElementById("name").value = "";
   document.getElementById("surname").value = "";

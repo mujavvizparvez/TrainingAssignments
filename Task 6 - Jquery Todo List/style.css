@@ -1,0 +1,45 @@
+form {
+  width: 70%;
+  margin: auto;
+}
+.to-do-list {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+label {
+  padding: 10px;
+  font-size: 20px;
+}
+.input {
+  width: 60%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+#btn {
+  font-size: 20px;
+  padding: 6px 15px;
+  margin-top: 20px;
+  color: black;
+  background-color: aquamarine;
+}
+.order-list {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+.add-List {
+  margin: 10px;
+}
+.input-list {
+  width: 60%;
+  padding: 10px;
+}
+button {
+  margin-left: 85%;
+}
+.add-List {
+  display: flex;
+}
