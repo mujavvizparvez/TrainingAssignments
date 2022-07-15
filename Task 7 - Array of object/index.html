@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Arrays of Object</title>
+  </head>
+  <body>
+    <form>
+      <h1>Product Details</h1>
+      <div class="container">
+
+        <div class="form-controls">
+          <div class="info-div">
+            <label for="" class="form-control-label">Product Name: </label
+            ><br />
+            <input
+              type="text"
+              id="pName"
+              name="pName"
+              class="form-control-input"
+            />
+            <small class="errorMsg"></small>
+          </div>
+
+          <div class="info-div">
+            <label for="" class="form-control-label">Product Quantity: </label
+            ><br />
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              class="form-control-input"
+              value="1"
+            />
+            <small class="errorMsg"></small>
+          </div>
+
+          <div class="info-div">
+            <label for="" class="form-control-label">Product Price: </label
+            ><br />
+            <input
+              type="number"
+              id="price"
+              name="price"
+              class="form-control-input"
+            />
+            <small class="errorMsg"></small>
+          </div>
+          
+            <div class="submit-btn">
+              <input
+                type="button"
+                value="Submit"
+                class="submit-btn-input"
+                id="btnSubmit"
+              />
+            </div>
+        </div>
+
+          <div class="prod-list">
+            <table border="2" class="prod-list-table">
+              <h2 class="prod-list-heading">Product List</h2>
+              <thead>
+                <tr>
+                  <th>Sr.No</th>
+                  <th>Product Name</th>
+                  <th>Product Quantity</th>
+                  <th>Product Price</th>
+                  <th>Total</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="prod-list-body"></tbody>
+              <tfoot>
+                <tr>
+                  <td id="sum-g-total">Grand Total</td>
+                  <td id="prod-list-total" colspan="5"></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="prod-summary">
+          <table class="prod-summary-table">
+            <h2 class="summary-heading">Product Summary</h2>
+            <thead>
+              <tr>
+                <th>Sr.No</th>
+                <th>Product Quantity</th>
+                <th>Product Name</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="prod-summary-body"></tbody>
+            <tfoot class="prod-summary-tfoot">
+              <tr>
+                <td>Grand Total</td>
+                <td id="summary-total" colspan="3"></td>
+              </tr>
+            </tfoot>
+          </table>
+      </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
