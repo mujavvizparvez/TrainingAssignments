@@ -1,12 +1,16 @@
-form {
+html,body,form {
   width: 70%;
   margin: auto;
+  background-color: rgb(34, 141, 194);
+  height: 100%;
 }
 .to-do-list {
   text-align: center;
+  
 }
 h1 {
   text-align: center;
+  color: rgb(48, 11, 82);
 }
 label {
   padding: 10px;
@@ -14,32 +18,40 @@ label {
 }
 .input {
   width: 60%;
-  padding: 10px;
+  padding: 15px;
   margin-top: 5px;
   border: 1px solid black;
 }
+.input::placeholder{
+  font-size: 20px;
+}
 #btn {
   font-size: 20px;
-  padding: 6px 15px;
-  margin-top: 20px;
+  padding: 10px 15px;
+  margin-top: 12px;
   color: black;
-  background-color: aquamarine;
-}
-.order-list {
-  width: 70%;
-  margin: auto;
-  margin-top: 10px;
-}
-.add-List {
-  margin: 10px;
-}
-.input-list {
-  width: 60%;
-  padding: 10px;
-}
-button {
-  margin-left: 85%;
+  background-color: rgb(30, 72, 170);
 }
 .add-List {
   display: flex;
 }
+.order-list {
+  width: 70%;
+  margin:.5em auto;
+    background-color: rgb(116, 168, 90);
+    
+}
+
+.input-list {
+  width: 90%;
+ margin: .6em;
+  padding: 15px;
+}
+button {
+  margin-left: 85%;
+ background-color: rgb(116, 168, 90);
+  border: none;
+  
+}
+
+
